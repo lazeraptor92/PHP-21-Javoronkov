@@ -1,15 +1,14 @@
 <?php 
 namespace product;
-
+//абстрактный класс и интерфейс для продуктов
  abstract class Product implements \InterfaceForGood 
  {
 	
-	public $sale = 5;
 	public $name;
     public $type;
 	public $price;
 	public $title;
-
+    public $sale = 5;
 
     public function __construct ($name, $type, $price, $title)
     {
@@ -25,19 +24,14 @@ namespace product;
     {
         if($this->name) {
             if($this->name = 'седан') {
-                return round($this->price - ($this->price * $this->$sale /100) );
+                return round($this->price - ($this->price * $this->sale /100) );
             }else {
                 return $this->price;
             }
-        }
+         }
+       
     }
-    function getFullDescription()
-    {
-        echo 
-        "{$this->name} {$this->type} <br/> цена  {$this->getSale()} руб.  <br/> {$this->title}}";
-    }  
 
-}
+}  
 
-
- ?>
+?>

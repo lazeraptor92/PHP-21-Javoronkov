@@ -1,16 +1,16 @@
 <?php 
 namespace order;
 
-final class order extends \basket\basket
+final class order extends \cart\cart
 {
 
 	
-    public function showAllProduct()
+    public function showCart()
     {
         $resCountProduct = 0;
             
             foreach($this->countProduct as $key => $value){
-            echo 'Товар ' . $value->name . $value->type  .', количество: ' . $value->numberProduct . '<br>';
+            echo $value->name . $value->type . $value->title .', количество: ' . $value->numberProduct . '<br>';
                 
         $resCountProduct = $resCountProduct + $value->numberProduct; 
           

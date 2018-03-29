@@ -3,11 +3,11 @@ namespace product;
 
 class Car extends Product  
 {
-	public $type;
+	//public $type;
 	//Чтобы вызвать конструктор, объявленный в родительском классе
 	function __construct($name, $type, $price, $title){
-		parent::__construct($name, $price, $title);
-		$this->type = $type;
+		parent::__construct($name, $type, $price, $title);
+		//$this->type = $type;
 	}
 }
 
