@@ -23,5 +23,6 @@ echo '<h3>Ваша корзина</h3>' . '<br/>';
 $order->showCart();
  
 echo '<br>';
-echo 'На сумму: ' . $order->sum();
+echo 'На сумму: ' . $order->sum() . "<br/>" . "<br/>" . "<hr/>" . "<br/>";
+echo '<a href=http://university.netology.ru/u/javoronkov/me/lesson%203.3/theory.html>Теоретическое задание<a/>';
 

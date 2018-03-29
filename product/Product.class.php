@@ -24,7 +24,7 @@ namespace product;
     {
         if($this->name) {
             if($this->name = 'седан') {
-                return round($this->price - ($this->price * $this->sale /100) );
+                return round($this->price - ($this->price * $this->sale/100) );
             }else {
                 return $this->price;
             }

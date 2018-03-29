@@ -10,7 +10,7 @@ class cart{
         $product->numberProduct = 1;
        
         if(array_key_exists($product->name, $this->countProduct)){
-          $this->countProduct[$product->numberProduct++] = $product;
+            $this->countProduct[$product->numberProduct++] = $product;
             echo 'Товар добавлен в корзину';
         }
         else{
@@ -22,10 +22,8 @@ class cart{
 
     }
      
-   public function deleteProduct($product)
-   {
-       
-        echo $product->name;
+    public function deleteProduct($product)
+    {
        
         foreach($this->countProduct as $key => $value){
             if($product->name == $key){
@@ -34,17 +32,16 @@ class cart{
             }
         }
     }
- //countProduct - ассоциативный массив, где ключ -> кол-во товара, а value
+ 
     public function sum()
     {
-        
-        $res = 0;
-       
-        foreach($this->countProduct as $key => $value){
-            $res = $res + ($value->price * $value->numberProduct);
-        }
-        
-        return $res;
+       $sum = 0;
+
+       foreach($this->countProduct as $key => $value){
+            $sum = $sum + ($value->price * $value->numberProduct);
+       }
+         
+        return $sum;
         
     }
 }
