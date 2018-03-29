@@ -137,7 +137,7 @@
         echo $duck2->getDuckProperty();
 
     $duck3 = new ClassDuck;
-        echo $duck3->giveDuckProperty("Чирок-свистунок", "Утка-гей");
+        echo $duck3->giveDuckProperty("Чирок-свистунок", "Gay");
         echo $duck3->getDuckProperty();
 
 ?>
