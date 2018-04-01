@@ -28,7 +28,7 @@
     $car2 = new CarClass;
         echo $car2->giveCarProperty("Mercedes", "SLS", "Серебристый");
         echo $car2->getCarProperty();
-	
+
     echo "<hr/>";	
     echo "</br>";
     echo "<h3>Телевизор</h3>";    
@@ -60,7 +60,7 @@
     $tv2 = new TvClass;
         echo $tv2->giveTvProperty("Sony", "FullHD", "74");
         echo $tv2->getTvProperty();
-   
+
     echo "<hr/>";
     echo "</br>";
     echo "<h3>Шариковая ручка</h3>";    
@@ -89,7 +89,7 @@
     $pen2 = new ClassPen;
         echo $pen2->givePenProperty("Синий", "Желтый");
         echo $pen2->getPenProperty();
-    
+
     echo "<hr/>";
     echo "</br>";
     echo "<h3>Утка</h3>";    
@@ -120,10 +120,10 @@
     $duck3 = new ClassDuck;
         echo $duck3->giveDuckProperty("Чирок-свистунок", "Гей");
         echo $duck3->getDuckProperty();
-    
+
     echo "<hr/>";
     echo "</br>";
-    echo "<h3>Товар</h3>"  ;    
+    echo "<h3>Товар</h3>";    
     
     class ClasGoods
     {
