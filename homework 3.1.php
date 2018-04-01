@@ -1,16 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>
-        homework 3.1.php
-    </title>
-</head>
-<body>
-
-<h3>Машина</h3>
-
 <?php 
+    echo '<h3>Машина</h3>';
+
     class CarClass
     {
         public $brand;
@@ -23,13 +13,12 @@
             $this->model = $Model;
             $this->color = $Color;
         }
-        
+
         public function getCarProperty()
         {
             echo "Марка машины:" . " " .$this->brand . "<br/>" ;
             echo "Модель:" . " " .$this->model. "<br/>";
             echo "Цвет:" . " " .$this->color. "<br/>" . "<br/>";
-            echo "<hr/>";
         }
     }
 
@@ -39,12 +28,11 @@
     $car2 = new CarClass;
         echo $car2->giveCarProperty("Mercedes", "SLS", "Серебристый");
         echo $car2->getCarProperty();
-?>
-  
-</br>
-<h3>Телевизор</h3>
-
-<?php
+	
+    echo "<hr/>";	
+    echo "</br>";
+    echo "<h3>Телевизор</h3>";    
+    
     class TvClass
     {
         public $brand;
@@ -63,23 +51,20 @@
             echo "Модель:" . " " .$this->brand . "<br/>";
             echo "Качество:" . " " .$this->quality . "<br/>";
             echo "Размер:" . " "  .$this->size . " Дюйма" . "<br/>" . "<br/>";
-            echo "<hr/>";
         }
     }
 
     $tv1 = new TvClass;
         echo $tv1->giveTvProperty("Samsung", "FullHD", "52" );
         echo $tv1->getTvProperty();
-
     $tv2 = new TvClass;
         echo $tv2->giveTvProperty("Sony", "FullHD", "74");
         echo $tv2->getTvProperty();
-?>
+   
+    echo "<hr/>";
+    echo "</br>";
+    echo "<h3>Шариковая ручка</h3>";    
 
-</br>
-<h3>Шариковая ручка</h3>
-
-<?php 
     class ClassPen
     {
         public $inkColor;
@@ -95,23 +80,20 @@
         {
             echo "Цвет чернил:" . " " .$this->inkColor. "<br/>";
             echo "Цвет ручки:" . " " .$this->penColor. "<br/>" . "<br/>";
-            echo "<hr/>";
         }
     }
 
     $pen1 = new ClassPen;
         echo $pen1->givePenProperty("Красный", "Синий");
         echo $pen1->getPenProperty();
-
     $pen2 = new ClassPen;
         echo $pen2->givePenProperty("Синий", "Желтый");
         echo $pen2->getPenProperty();
- ?>
+    
+    echo "<hr/>";
+    echo "</br>";
+    echo "<h3>Утка</h3>";    
 
-</br>
-<h3>Утка</h3>
-
-<?php
     class ClassDuck
     {
         public $kindDuck;
@@ -126,27 +108,23 @@
         {
             echo "Вид утки:" . " " . $this->kindDuck . "<br/>";
             echo "Род утки:" . " " . $this->genericDuck . "<br/>" . "<br/>";
-            echo "<hr/>";
         }
     }
+
     $duck1 = new ClassDuck;
         echo $duck1->giveDuckProperty("Кряква", "Селезень");
         echo $duck1->getDuckProperty();
-
     $duck2 = new ClassDuck;
         echo $duck2->giveDuckProperty("Чурок", "Утка");
         echo $duck2->getDuckProperty();
-
     $duck3 = new ClassDuck;
-        echo $duck3->giveDuckProperty("Чирок-свистунок", "Gay");
+        echo $duck3->giveDuckProperty("Чирок-свистунок", "Гей");
         echo $duck3->getDuckProperty();
-?>
-
-
-</br>
-<h3>Товар</h3>
-
-<?php
+    
+    echo "<hr/>";
+    echo "</br>";
+    echo "<h3>Товар</h3>"  ;    
+    
     class ClasGoods
     {
         public $nameGoods;
@@ -163,20 +141,18 @@
         public function getGoodsProperty()
         {
             echo "Название :" . " " . $this->nameGoods . "<br/>";
-            echo "Вес :" . " " . $this->massaGoods . "гр" . "<br/>";
-            echo "Цена :" . " " . $this->priceGoods  . "руб" . "<br/>";
-            echo "<hr/>";
+            echo "Вес :" . " " . $this->massaGoods . " " . "гр" . "<br/>";
+            echo "Цена :" . " " . $this->priceGoods . " " . "руб" . "<br/>"  . "<br/>";
         }
     }
 
     $goods1 = new ClasGoods;
         echo $goods1->giveGoodsProperty("Греча", "900" ,"39,90");
         echo $goods1->getGoodsProperty();
-
     $goods2 = new ClasGoods;
         echo $goods2->giveGoodsProperty("Яйца", "300" , "39,99");
         echo $goods2->getGoodsProperty();
-?>
 
-</body>
-</html>
+    echo "<hr/>";
+    echo "<a href=http://university.netology.ru/u/javoronkov/me/lesson%203.1/ustnoe-zadanie.html><h3>Устное задание</h3></a>" ;
+?>
