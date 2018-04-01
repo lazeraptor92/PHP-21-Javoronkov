@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>
+        homework 3.1.php
+    </title>
 </head>
 <body>
 
