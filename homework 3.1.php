@@ -68,11 +68,11 @@
     }
 
     $tv1 = new TvClass;
-        echo $tv1-> giveTvProperty("Samsung", "FullHD", "52" );
+        echo $tv1->giveTvProperty("Samsung", "FullHD", "52" );
         echo $tv1->getTvProperty();
 
     $tv2 = new TvClass;
-        echo $tv2-> giveTvProperty("Sony", "FullHD", "74");
+        echo $tv2->giveTvProperty("Sony", "FullHD", "74");
         echo $tv2->getTvProperty();
 ?>
 
@@ -100,11 +100,11 @@
     }
 
     $pen1 = new ClassPen;
-        echo $pen1-> givePenProperty("Красный", "Синий");
+        echo $pen1->givePenProperty("Красный", "Синий");
         echo $pen1->getPenProperty();
 
     $pen2 = new ClassPen;
-        echo $pen2-> givePenProperty("Синий", "Желтый");
+        echo $pen2->givePenProperty("Синий", "Желтый");
         echo $pen2->getPenProperty();
  ?>
 
