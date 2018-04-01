@@ -9,7 +9,6 @@
 <h3>Машина</h3>
 
 <?php 
-    
     class CarClass
     {
         public $brand;
@@ -35,21 +34,17 @@
     $car1 = new CarClass;
         echo $car1->giveCarProperty("BMW", "M5", "Металлик");
         echo $car1->getCarProperty();
-
     $car2 = new CarClass;
         echo $car2->giveCarProperty("Mercedes", "SLS", "Серебристый");
         echo $car2->getCarProperty();
-
 ?>
   
 </br>
 <h3>Телевизор</h3>
 
 <?php
-
     class TvClass
     {
-      
         public $brand;
         public $quality;
         public $size;
@@ -77,14 +72,12 @@
     $tv2 = new TvClass;
         echo $tv2-> giveTvProperty("Sony", "FullHD", "74");
         echo $tv2->getTvProperty();
-
 ?>
 
 </br>
 <h3>Шариковая ручка</h3>
 
 <?php 
-
     class ClassPen
     {
         public $inkColor;
@@ -111,14 +104,12 @@
     $pen2 = new ClassPen;
         echo $pen2-> givePenProperty("Синий", "Желтый");
         echo $pen2->getPenProperty();
-
  ?>
 
 </br>
 <h3>Утка</h3>
 
 <?php
-
     class ClassDuck
     {
         public $kindDuck;
@@ -147,7 +138,6 @@
     $duck3 = new ClassDuck;
         echo $duck3->giveDuckProperty("Чирок-свистунок", "Gay");
         echo $duck3->getDuckProperty();
-
 ?>
 
 
@@ -155,7 +145,6 @@
 <h3>Товар</h3>
 
 <?php
-
     class ClasGoods
     {
         public $nameGoods;
@@ -185,7 +174,6 @@
     $goods2 = new ClasGoods;
         echo $goods2->giveGoodsProperty("Яйца", "300" , "39,99");
         echo $goods2->getGoodsProperty();
-
 ?>
 
 </body>
