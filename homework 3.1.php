@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
 <h3>Машина</h3>
 
 <?php 
@@ -179,3 +187,6 @@
         echo $goods2->getGoodsProperty();
 
 ?>
+
+</body>
+</html>
