@@ -26,7 +26,7 @@
             $userCity = 'Serpukhov';
             $userAbout = 'web-разработчик';
             $userFullname = $userFirstname . ' ' . $userLasttname;
-            $userAge = '25';
+            $userAge = 25;
         ?>
             <h1>Страница пользователя Сергей</h1>
             <dl>
@@ -44,7 +44,7 @@
             <dl>
                 <dt>Адрес электронной почты</dt>
                 <dd>
-                    <a href="mailto:mattchuzi@yandex.ru">
+                    <a href="mailto:<?= $userEmail ?>">
                         <?= $userEmail ?>
                     </a>
                 </dd>
